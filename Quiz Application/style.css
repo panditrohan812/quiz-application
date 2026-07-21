@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2, #6a11cb, #2575fc);
+  background-size: 300% 300%;
+  animation: bgAnimation 8s ease infinite;
+}
+
+@keyframes bgAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.quiz-box {
+  width: 100%;
+  max-width: 650px;
+
+  background: rgba(255, 255, 255, 0.15);
+
+  backdrop-filter: blur(15px);
+
+  border-radius: 20px;
+
+  padding: 30px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+
+  color: white;
+}
+
+.quiz-box h2 {
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+#question {
+  font-size: 24px;
+
+  font-weight: 600;
+}
+
+.option {
+  width: 100%;
+
+  margin-bottom: 15px;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: white;
+
+  color: #333;
+
+  font-size: 17px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.option:hover {
+  transform: translateY(-3px);
+
+  background: #0d6efd;
+
+  color: white;
+}
+
+.correct {
+  background: #28a745 !important;
+
+  color: white !important;
+}
+
+.wrong {
+  background: #dc3545 !important;
+
+  color: white !important;
+}
+
+#nextBtn {
+  border-radius: 10px;
+
+  font-size: 18px;
+
+  font-weight: bold;
+
+  padding: 12px;
+}
+
+.progress {
+  height: 12px;
+
+  border-radius: 20px;
+}
+
+#timer {
+  font-size: 16px;
+
+  padding: 8px 15px;
+}
+
+.result {
+  text-align: center;
+}
+
+.result h1 {
+  font-size: 60px;
+
+  font-weight: bold;
+
+  color: #ffd43b;
+}
+
+.result h2 {
+  font-weight: bold;
+}
+
+.result p {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .quiz-box {
+    padding: 20px;
+
+    margin: 15px;
+  }
+
+  #question {
+    font-size: 20px;
+  }
+
+  .option {
+    font-size: 15px;
+
+    padding: 12px;
+  }
+}
