@@ -57,7 +57,7 @@ The application includes:
 
 ## 🔗 GitHub Repository
 
-(Add your GitHub repository link here)
+https://github.com/panditrohan812/quiz-application
 
 ## 👨‍💻 Author
 
