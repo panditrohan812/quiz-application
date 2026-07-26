@@ -55,6 +55,10 @@ The application includes:
 - Answer validation
 - Final score display
 
+  ## 📹 Project Explanation Video
+
+🔗  https://drive.google.com/file/d/1YzRnuFd2EcmgkCmRbicaXSMuk_qJ0afq/view?usp=drivesdk
+
 ## 🔗 GitHub Repository
 
 https://github.com/panditrohan812/quiz-application
